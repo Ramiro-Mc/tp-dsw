@@ -17,20 +17,20 @@ Página de cursos educativos online
 
 ### Descripción
 
-> El sistema permitirá a los usuarios ingresar a la pagina web, registrarse e inscribirse a los cursos disponibles, realizando pagos a través de una pasarela de pagos.
->***
-> Un usuario puede tambien dar de alta un curso de forma gratuita. El administrador despues de verificar el mismo, le informara al creador la comision que este tendra por cada venta. Tambien el creador puede pagar por publicidad de su curso para cierta cantidad de d.
->***
->Por lo tanto, un usuario puede navegar por la pagina como cliente y dueño de un curso de forma simultanea.
->***
-> El creador de un curso tendra su propia interfaz para administrar o actualizar ciertas caracteristicas del mismo (contenido, precios, anuncios, etc.).
->***
-> Desde la vista de un usuario los cursos contaran con una interfaz especial en la cual se puede elegir la leccion a tomar (video y/o pdf) y llevar un registro del progreso del curso.
->***
->Dentro de cada curso habrá una seccion llamada "comunidad" pensada para que los usuarios que estan realizando el mismo puedan intercambiar dudas/opiniones y dar feedback al creador del curso.
+* El sistema permitirá a los usuarios ingresar a la pagina web, registrarse e inscribirse a los cursos disponibles, realizando pagos a través de una pasarela de pagos.
+
+* Un usuario puede tambien dar de alta un curso de forma gratuita. El administrador despues de verificar el mismo, le informara al creador la comision que este tendra por cada venta. Tambien el creador puede pagar por publicidad de su curso para cierta cantidad de días.
+
+* Por lo tanto, un usuario puede navegar por la pagina como cliente y dueño de un curso de forma simultanea.
+
+* El creador de un curso tendra su propia interfaz para administrar o actualizar ciertas caracteristicas del mismo (contenido, precios, anuncios, etc.).
+
+* Desde la vista de un usuario los cursos contaran con una interfaz especial en la cual se puede elegir la leccion a tomar (video y/o pdf) y llevar un registro del progreso del curso.
+
+* Dentro de cada curso habrá una seccion llamada "comunidad" pensada para que los usuarios que estan realizando el mismo puedan intercambiar dudas/opiniones y dar feedback al creador del curso.
 
 ### Modelo
-![Relative](/diagrama.png)
+![Alt](https://github.com/Ramiro-Mc/tp-dsw/blob/main/Diagrama.png?raw=true)
 
 ## Alcance Funcional 
 
