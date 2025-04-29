@@ -2,51 +2,63 @@
 
 ## Grupo
 ### Integrantes
-* legajo - Apellido(s), Nombre(s)
+* 52992 - Martinez Castro, Ramiro Facundo
+* 52838 - López, Joaquín
+* 52959 - García Marianelli, Matías Fenando
+* 53020 - Busnadiego, Martín
+* 53400 - Spedaliere, Mateo
 
 ### Repositorios
-* [frontend app](http://hyperlinkToGihubOrGitlab)
-* [backend app](http://hyperlinkToGihubOrGitlab)
-*Nota*: si utiliza un monorepo indicar un solo link con fullstack app.
+* [fullstack app](https://github.com/Ramiro-Mc/dsw-fullstack-app)
 
 ## Tema
+
+Página de cursos educativos online 
+
 ### Descripción
-*2 a 6 líneas describiendo el negocio (menos es más)*
+
+> El sistema permitirá a los usuarios ingresar a la pagina web, registrarse e inscribirse a los cursos disponibles, realizando pagos a través de una pasarela de pagos.
+>***
+> Un usuario puede tambien dar de alta un curso de forma gratuita. El administrador despues de verificar el mismo, le informara al creador la comision que este tendra por cada venta. Tambien el creador puede pagar por publicidad de su curso para cierta cantidad de d.
+>***
+>Por lo tanto, un usuario puede navegar por la pagina como cliente y dueño de un curso de forma simultanea.
+>***
+> El creador de un curso tendra su propia interfaz para administrar o actualizar ciertas caracteristicas del mismo (contenido, precios, anuncios, etc.).
+>***
+> Desde la vista de un usuario los cursos contaran con una interfaz especial en la cual se puede elegir la leccion a tomar (video y/o pdf) y llevar un registro del progreso del curso.
+>***
+>Dentro de cada curso habrá una seccion llamada "comunidad" pensada para que los usuarios que estan realizando el mismo puedan intercambiar dudas/opiniones y dar feedback al creador del curso.
 
 ### Modelo
-![imagen del modelo]()
-
-*Nota*: incluir un link con la imagen de un modelo, puede ser modelo de dominio, diagrama de clases, DER. Si lo prefieren pueden utilizar diagramas con [Mermaid](https://mermaid.js.org) en lugar de imágenes.
+![Relative](/diagrama.png)
 
 ## Alcance Funcional 
 
 ### Alcance Mínimo
 
-*Nota*: el siguiente es un ejemplo para un grupo de 3 integrantes para un sistema de hotel. El 
 
 Regularidad:
 |Req|Detalle|
 |:-|:-|
-|CRUD simple|1. CRUD Tipo Habitacion<br>2. CRUD Servicio<br>3. CRUD Localidad|
-|CRUD dependiente|1. CRUD Habitación {depende de} CRUD Tipo Habitacion<br>2. CRUD Cliente {depende de} CRUD Localidad|
-|Listado<br>+<br>detalle| 1. Listado de habitaciones filtrado por tipo de habitación, muestra nro y tipo de habitación => detalle CRUD Habitacion<br> 2. Listado de reservas filtrado por rango de fecha, muestra nro de habitación, fecha inicio y fin estadía, estado y nombre del cliente => detalle muestra datos completos de la reserva y del cliente|
-|CUU/Epic|1. Reservar una habitación para la estadía<br>2. Realizar el check-in de una reserva|
+|CRUD simple|1. CRUD Curso<br>2. CRUD Cliente <br> 3. CRUD Administrador <br> 4. CRUD TipoCurso |
+|CRUD dependiente|1. CRUD Leccion {depende de} CRUD Curso
+|Listado<br>+<br>detalle| 1. Listado de lecciones por curso, ordenado por número de lección => detalle muestra título de la lección, descripció y duración<br> 2. Listado de cursos filtrado por estado, duración, tipo de curso, costo y nombre del creador => detalle muestra titulo de curso, costo y duración|
+|CUU/Epic|1. Inscribirse a un curso<br>2. Publicar un curso <br> 3. Tomar lecciones|
 
 
 Adicionales para Aprobación
 |Req|Detalle|
 |:-|:-|
-|CRUD |1. CRUD Tipo Habitacion<br>2. CRUD Servicio<br>3. CRUD Localidad<br>4. CRUD Provincia<br>5. CRUD Habitación<br>6. CRUD Empleado<br>7. CRUD Cliente|
-|CUU/Epic|1. Reservar una habitación para la estadía<br>2. Realizar el check-in de una reserva<br>3. Realizar el check-out y facturación de estadía y servicios|
+|CRUD |1. CRUD Curso<br>2. CRUD Cliente<br>3. CRUD Administrador<br>4. CRUD TipoCurso<br>5. CRUD Comunidad <br>6. CRUD Publicacion <br>7. CRUD Descuento|
+|CUU/Epic|1. Dar de baja un curso<br>2. Mostrar facturación generada con cada curso<br>3. Aplicar descuento a curso <br> 4. Dar una puntuacion a un curso
 
 
 ### Alcance Adicional Voluntario
 
-*Nota*: El Alcance Adicional Voluntario es opcional, pero ayuda a que la funcionalidad del sistema esté completa y será considerado en la nota en función de su complejidad y esfuerzo.
-
 |Req|Detalle|
 |:-|:-|
-|Listados |1. Estadía del día filtrado por fecha muestra, cliente, habitaciones y estado <br>2. Reservas filtradas por cliente muestra datos del cliente y de cada reserve fechas, estado cantidad de habitaciones y huespedes|
-|CUU/Epic|1. Consumir servicios<br>2. Cancelación de reserva|
-|Otros|1. Envío de recordatorio de reserva por email|
+|Listados |1. Listado de cursos adquiridos<br>2. Listado de cursos en promocion<br>3. Listado de cursos creados|
+|CUU/Epic|1. Contratar publicidad para un curso<br>|
+|Otros|1. Envío de notificaciones de comunidad a email <br>2. Envio de notificaciones sobre vencimiento de membresia al mail<br>3. Envio de notificaciones sobre promociones de cursos|
+
 
